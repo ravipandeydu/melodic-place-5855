@@ -17,6 +17,7 @@ import BrandLogo2 from "../Common/Logo2";
 
 function Footer() {
   return (
+    <div style={{textAlign:"center"}}>
     <Box bg="#183962" color="white" textAlign= "center">
       <Flex>
         <BrandLogo2 />
@@ -67,6 +68,7 @@ function Footer() {
       <Text>Copyright 2008-2021 FitNow, Inc, All Rights Reserved</Text>
       <Text>Privacy | Terms of Service</Text>
     </Box>
+    </div>
   );
 }
 
