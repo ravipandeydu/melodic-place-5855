@@ -1,49 +1,79 @@
-import {
-  Container,
-  Box,
-  Flex,
-  Heading,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Container, Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 function Steps() {
   return (
-    <Container>
-      <Heading>Weight Loss Made Easy</Heading>
+    <Box p="0% 28%" pb="1rem">
+      <Heading as="h1"
+              fontSize="28px"
+              justifySelf="center"
+              color="#183962"
+              mb="10px"
+              textAlign="center">Weight Loss Made Easy</Heading>
       <Flex>
-        <Box>
-          <Heading>Weight Loss Made Easy</Heading>
+        <Box m="0px 10px">
+          <Heading as="h1"
+              fontSize="21px"
+              justifySelf="center"
+              textAlign="center"
+              color="#ff9400"
+              mb="10px">Set Your Goals</Heading>
           <Image
-            width="200px"
-            src={
-              "https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
-            }
+          display="block"
+          ml="auto" 
+          mr="auto"
+            width="140px"
+            src={"https://assets.loseit.com/website/home/Home_SetGoal.svg"}
           />
-          <Text>Tell us what you want to acheive and receive personalized goals.</Text>
+          <Text fontSize="15.4px"
+              textAlign="center"
+              color="#808284">
+            Tell us what you want to acheive and receive personalized goals.
+          </Text>
         </Box>
-        <Box>
-          <Heading>Weight Loss Made Easy</Heading>
+        <Box m="0px 10px">
+          <Heading as="h1"
+              fontSize="21px"
+              justifySelf="center"
+              textAlign="center"
+              color="#ff9400"
+              mb="10px">Track Your Food</Heading>
           <Image
-            width="200px"
-            src={
-              "https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
-            }
+          display="block"
+          ml="auto" 
+          mr="auto"
+            width="140px"
+            src={"https://assets.loseit.com/website/home/Home_TrackFoods.svg"}
           />
-          <Text>Learn about the foods you’re eating and keep your calories within your daily budget.</Text>
+          <Text fontSize="15.4px"
+              textAlign="center"
+              color="#808284">
+            Learn about the foods you’re eating and keep your calories within
+            your daily budget.
+          </Text>
         </Box>
-        <Box>
-          <Heading>Weight Loss Made Easy</Heading>
+        <Box m="0px 10px">
+          <Heading as="h1"
+              fontSize="21px"
+              justifySelf="center"
+              textAlign="center"
+              color="#ff9400"
+              mb="10px">Lose Weight</Heading>
           <Image
-            width="200px"
-            src={
-              "https://assets.loseit.com/website/corporate/LoseIt_Logo_FullColor+(1).svg"
-            }
+          display="block"
+          ml="auto" 
+          mr="auto"
+            width="140px"
+            src={"https://assets.loseit.com/website/home/Home_LoseWeight.svg"}
           />
-          <Text>Reach your goals and continue to set new ones for a happier, healthier you!</Text>
+          <Text fontSize="15.4px"
+              textAlign="center"
+              color="#808284">
+            Reach your goals and continue to set new ones for a happier,
+            healthier you!
+          </Text>
         </Box>
       </Flex>
-    </Container>
+    </Box>
   );
 }
 
