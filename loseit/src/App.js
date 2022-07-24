@@ -1,16 +1,10 @@
 import './App.css';
-import Header from "./Components/Home/Header";
-import Footer from "./Components/Home/Footer";
-import Steps from "./Components/Home/Steps"
+import AllRoutes from "./Routes/AllRoutes";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Steps />
-      <Footer />
-    </div>
-  );
+  return <AllRoutes />;
 }
 
 export default App;

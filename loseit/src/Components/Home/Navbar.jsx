@@ -1,16 +1,22 @@
 import { Box, Button, Flex, Spacer } from "@chakra-ui/react";
-import BrandLogo from "../Common/Logo";
+import BrandLogo from "../common/Logo";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  let navigate = useNavigate();
+  function handleLogin(){
+    navigate("/login")
+  }
   return (
-    <Box>
-      <Flex gap="1rem" p="1rem" borderBottom="1px" borderColor="gray.200">
+    <Box p="0% 20%" pb="1rem">
+      <Flex>
         <BrandLogo />
         <Spacer />
         <Box>
-        <Button colorScheme="blue">Login</Button>
+          <Button size="md" variant="solid" onClick={handleLogin}>
+            Login
+          </Button>
         </Box>
-        
       </Flex>
     </Box>
   );
